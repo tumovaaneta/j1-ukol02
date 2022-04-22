@@ -79,18 +79,29 @@ public void nakresliBarevnyRovnostrannyTrojuhelnik(double velikostStrany,Color b
 }
 ```
 
+Pro mašinku můžete připravit i metodu na kreslení rovnoramenného pravoúhlého trojúhelníku. Zbývající dva úhly budou samozřejmě 45°
+a délku třetí strany (přepony) vypočítáte:
+
+```java
+double prepona = Math.sqrt(2*Math.pow(strana, 2));
+```
+
+`Math.pow()` umocní první pamater na hodnotu druhého parametru. `Math.sqrt()` vypočítá druhou odmocninu.
+
+
 ## Část 1.2 – Detailní zadání
 
 Vytvořte tedy parametrizované metody na kreslení rovnostranného trojuhelníku, čtverce, obdelníku a kolečka. Metody pro
 nakreslení rovnostranného trojúhelníku a čtverce by měly přijímat jako vstupní parametr velikost strany (typu `double`).
 V případě obdelníku budou nutné dva parametry (strana A, strana B). V případě kolečka se bude předávat velikost
-kolečka (zda to bude poloměr, průměr nebo nějaká jiná charakteristika, nechám na vás).
+kolečka (zda to bude poloměr, průměr nebo nějaká jiná charakteristika, nechám na vás). Pro mašinku si můžete připravit i metodu
+pro kreslení pravoúhlého rovnoramenného trojúhelníku, vzoreček je uveden v předchozí části.
 
 Pokud chcete, jako bonus můžou metody přijímat i barvu kreslení. Není to ale povinné.
 
 # Část 2
 
-Pomocí výše odladěných metod nakreslete následující obrázky – zmrzlinu, sněhuláka a mašinku.
+Pomocí výše odladěných metod nakreslete následující obrázky – zmrzlinu, sněhuláka a mašinku. Pro mašinku můžete použít buď připravenou metodu pro rovnostranný trojúhelník (mašinka pak vepředu nebude mít pluh ale spíš šipku), nebo si vytvořte ještě metodu pro nakreslení pravoúhlého trojúhelníku).
 
 ![zmrzlina](/obrazky/ukol03-zmrzlina.svg)
 
