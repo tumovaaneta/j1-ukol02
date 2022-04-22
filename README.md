@@ -83,7 +83,7 @@ Pro mašinku můžete připravit i metodu na kreslení rovnoramenného pravoúhl
 a délku třetí strany (přepony) vypočítáte:
 
 ```java
-double prepona = Math.sqrt(2*Math.pow(strana, 2));
+double velikostPrepony = Math.sqrt(2*Math.pow(velikostStrany, 2));
 ```
 
 `Math.pow()` umocní první pamater na hodnotu druhého parametru. `Math.sqrt()` vypočítá druhou odmocninu.
