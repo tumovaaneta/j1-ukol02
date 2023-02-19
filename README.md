@@ -1,4 +1,4 @@
-# Úkol 2 (lekce 3) – Želva Žofka 2
+# Úkol 2 – Želva Žofka 2
 
 Každou část úkolu vytvořte jako samostatný commit. Pokud zjistíte dodatečně v kódu nějakou chybu, nevadí, commitněte
 opravu jako další commit. Pokud si chcete práci průběžně zálohovat, po commitu udělejte také push, čímž se všechny
@@ -24,7 +24,7 @@ hodnotou, uvnitř metody se `velikostStrany` chová jako proměnná (proto musí
 Turtle zofka;
 
 public void main(String[]args) {
-        zofka=new Turtle();
+        zofka = new Turtle();
 
         zofka.setLocation(100.0,100.0);
         // Volani metody, do ktere se preda hodnota 50.0
@@ -53,7 +53,7 @@ Metoda může přijímat i více parametrů za sebou (oddělujeme čárkou):
 Turtle zofka;
 
 public void main(String[]args) {
-        zofka=new Turtle();
+        zofka = new Turtle();
 
         Color cervenaBarva;
         cervenaBarva=new Color(255,0,0);
@@ -83,7 +83,7 @@ Pro mašinku můžete připravit i metodu na kreslení rovnoramenného pravoúhl
 a délku třetí strany (přepony) vypočítáte:
 
 ```java
-double velikostPrepony = Math.sqrt(2*Math.pow(velikostStrany, 2));
+var velikostPrepony = Math.sqrt(2*Math.pow(velikostStrany, 2));
 ```
 
 `Math.pow()` umocní první pamater na hodnotu druhého parametru. `Math.sqrt()` vypočítá druhou odmocninu.
